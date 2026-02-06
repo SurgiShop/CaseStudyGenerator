@@ -1,0 +1,2154 @@
+[
+  {
+    "id": "cs-1770048950075",
+    "name": "CS1",
+    "createdAt": "2026-02-02T16:15:50.075Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-cash",
+      "pick-multi-location",
+      "rma-reason-code"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-02T16:15:50.075Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 1,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770048950075-0",
+          "product": {
+            "ref": "0275-647-000B",
+            "gtin": "37613327061735",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026U6950",
+          "expiry": "Aug-2026",
+          "baseQuantity": 11,
+          "quantities": {
+            "inbound": 11,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)76133270617357(17)260828(10)LOT2026U6950",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770048950075-1",
+          "product": {
+            "ref": "2296-003-225E",
+            "gtin": "04546540046550",
+            "originalExpiry": "Oct-2025"
+          },
+          "lot": "LOT2026H1298",
+          "expiry": "Jul-2027",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)45465400465508(17)270728(10)LOT2026H1298",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770048950075-2",
+          "product": {
+            "ref": "306028-0000-000E",
+            "gtin": "04049539102386",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026M3162",
+          "expiry": "Aug-2026",
+          "baseQuantity": 12,
+          "quantities": {
+            "inbound": 12,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)40495391023864(17)260828(10)LOT2026M3162",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770048950075-3",
+          "product": {
+            "ref": "204.838E",
+            "gtin": "04712782854325",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026W8091",
+          "expiry": "Oct-2026",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)47127828543258(17)261028(10)LOT2026W8091",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770048950075-4",
+          "product": {
+            "ref": "9079-VC-005E",
+            "gtin": "10816000013967",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026K9777",
+          "expiry": "Sep-2026",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)08160000139673(17)260928(10)LOT2026K9777",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770048950075-variant",
+          "product": {
+            "ref": "0275-647-000B",
+            "gtin": "37613327061735",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026K4238",
+          "expiry": "May-2026",
+          "baseQuantity": 11,
+          "quantities": {
+            "inbound": 11,
+            "sales": 6,
+            "picking": 6,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)76133270617357(17)260528(10)LOT2026K4238",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 91,
+        "totalSalesQty": 52,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770224468738",
+    "name": "CS2",
+    "createdAt": "2026-02-04T17:01:08.738Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-04T17:01:08.738Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770224468737-0",
+          "product": {
+            "ref": "73301088E",
+            "gtin": "05037881168678",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026L1619",
+          "expiry": "Feb-2027",
+          "baseQuantity": 16,
+          "quantities": {
+            "inbound": 16,
+            "sales": 9,
+            "picking": 9,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)50378811686788(17)270228(10)LOT2026L1619",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770224468737-1",
+          "product": {
+            "ref": "2296-003-225E",
+            "gtin": "04546540046550",
+            "originalExpiry": "Oct-2025"
+          },
+          "lot": "LOT2026A1524",
+          "expiry": "Apr-2027",
+          "baseQuantity": 18,
+          "quantities": {
+            "inbound": 18,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)45465400465508(17)270428(10)LOT2026A1524",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770224468737-2",
+          "product": {
+            "ref": "UMW676E",
+            "gtin": "00888937001440",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026D8120",
+          "expiry": "Jan-2027",
+          "baseQuantity": 13,
+          "quantities": {
+            "inbound": 13,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)08889370014402(17)270128(10)LOT2026D8120",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770224468738-3",
+          "product": {
+            "ref": "405120E",
+            "gtin": "05415067040978",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026T1268",
+          "expiry": "Jul-2027",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)54150670409786(17)270728(10)LOT2026T1268",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770224468738-4",
+          "product": {
+            "ref": "00711811E",
+            "gtin": "00724995180881",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026S9853",
+          "expiry": "Nov-2026",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)07249951808812(17)261128(10)LOT2026S9853",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770224468738-variant",
+          "product": {
+            "ref": "73301088E",
+            "gtin": "05037881168678",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026W7140",
+          "expiry": "Dec-2026",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)50378811686788(17)261228(10)LOT2026W7140",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 94,
+        "totalSalesQty": 53,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770394337364",
+    "name": "CS3",
+    "createdAt": "2026-02-06T16:12:17.364Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T16:12:17.364Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770394337364-0",
+          "product": {
+            "ref": "202.816E",
+            "gtin": "10886982144744",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026G9620",
+          "expiry": "Sep-2026",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)08869821447447(17)260928(10)LOT2026G9620",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770394337364-1",
+          "product": {
+            "ref": "AR-3200-1040E",
+            "gtin": "00888867100640",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026G6437",
+          "expiry": "Jun-2027",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)08888671006406(17)270628(10)LOT2026G6437",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770394337364-2",
+          "product": {
+            "ref": "204.838E",
+            "gtin": "04712782854325",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026V5061",
+          "expiry": "Nov-2026",
+          "baseQuantity": 10,
+          "quantities": {
+            "inbound": 10,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)47127828543258(17)261128(10)LOT2026V5061",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770394337364-3",
+          "product": {
+            "ref": "4425B",
+            "gtin": "10843997013113",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026K5680",
+          "expiry": "May-2027",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)08439970131131(17)270528(10)LOT2026K5680",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770394337364-4",
+          "product": {
+            "ref": "SU130-1238E",
+            "gtin": "00684995510043",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026X8303",
+          "expiry": "Sep-2026",
+          "baseQuantity": 16,
+          "quantities": {
+            "inbound": 16,
+            "sales": 9,
+            "picking": 9,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)06849955100434(17)260928(10)LOT2026X8303",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770394337364-variant",
+          "product": {
+            "ref": "202.816E",
+            "gtin": "10886982144744",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026C7478",
+          "expiry": "Jul-2026",
+          "baseQuantity": 20,
+          "quantities": {
+            "inbound": 20,
+            "sales": 12,
+            "picking": 12,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "gs1String": "(01)08869821447447(17)260728(10)LOT2026C7478",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 96,
+        "totalSalesQty": 56,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770395629924",
+    "name": "CS4",
+    "createdAt": "2026-02-06T16:33:49.924Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T16:33:49.924Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770395629923-0",
+          "product": {
+            "ref": "G6303E",
+            "gtin": "00607915118105",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026X4514",
+          "expiry": "Apr-2027",
+          "baseQuantity": 20,
+          "quantities": {
+            "inbound": 20,
+            "sales": 12,
+            "picking": 12,
+            "returns": 3,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 192.65,
+            "outboundUnitPrice": 184.97,
+            "profitMargin": -3.99
+          },
+          "gs1String": "(01)06079151181054(17)270428(10)LOT2026X4514",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395629924-1",
+          "product": {
+            "ref": "2296-003-225E",
+            "gtin": "04546540046550",
+            "originalExpiry": "Oct-2025"
+          },
+          "lot": "LOT2026F1736",
+          "expiry": "Jun-2027",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 108.49,
+            "outboundUnitPrice": 116.32,
+            "profitMargin": 7.22
+          },
+          "gs1String": "(01)45465400465508(17)270628(10)LOT2026F1736",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395629924-2",
+          "product": {
+            "ref": "306028-0000-000E",
+            "gtin": "04049539102386",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026C2281",
+          "expiry": "Jan-2027",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 125.63,
+            "outboundUnitPrice": 156.42,
+            "profitMargin": 24.51
+          },
+          "gs1String": "(01)40495391023864(17)270128(10)LOT2026C2281",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395629924-3",
+          "product": {
+            "ref": "00711811E",
+            "gtin": "00724995180881",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026J0076",
+          "expiry": "Jun-2027",
+          "baseQuantity": 11,
+          "quantities": {
+            "inbound": 11,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 186.9,
+            "outboundUnitPrice": 193.01,
+            "profitMargin": 3.27
+          },
+          "gs1String": "(01)07249951808812(17)270628(10)LOT2026J0076",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395629924-4",
+          "product": {
+            "ref": "C9415E",
+            "gtin": "10845854018705",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026F6499",
+          "expiry": "Jun-2027",
+          "baseQuantity": 10,
+          "quantities": {
+            "inbound": 10,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 178.21,
+            "outboundUnitPrice": 201.66,
+            "profitMargin": 13.16
+          },
+          "gs1String": "(01)08458540187057(17)270628(10)LOT2026F6499",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395629924-variant",
+          "product": {
+            "ref": "G6303E",
+            "gtin": "00607915118105",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026O4364",
+          "expiry": "Aug-2026",
+          "baseQuantity": 13,
+          "quantities": {
+            "inbound": 13,
+            "sales": 7,
+            "picking": 7,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 134.52,
+            "outboundUnitPrice": 156,
+            "profitMargin": 15.97
+          },
+          "gs1String": "(01)06079151181054(17)260828(10)LOT2026O4364",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 82,
+        "totalSalesQty": 47,
+        "totalInboundValue": 12717.44,
+        "totalSalesValue": 7861.58,
+        "expectedProfit": 544.52,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770395793426",
+    "name": "CS5",
+    "createdAt": "2026-02-06T16:36:33.426Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T16:36:33.426Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770395793426-0",
+          "product": {
+            "ref": "0275-647-000B",
+            "gtin": "37613327061735",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026Z9037",
+          "expiry": "Feb-2027",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 169.28,
+            "outboundUnitPrice": 157.29,
+            "profitMargin": -7.08
+          },
+          "gs1String": "(01)76133270617357(17)270228(10)LOT2026Z9037",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395793426-1",
+          "product": {
+            "ref": "UMB678E",
+            "gtin": "00888937001402",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026C3959",
+          "expiry": "May-2027",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 191.17,
+            "outboundUnitPrice": 187.86,
+            "profitMargin": -1.73
+          },
+          "gs1String": "(01)08889370014020(17)270528(10)LOT2026C3959",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395793426-2",
+          "product": {
+            "ref": "00711811E",
+            "gtin": "00724995180881",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026H7117",
+          "expiry": "Nov-2026",
+          "baseQuantity": 20,
+          "quantities": {
+            "inbound": 20,
+            "sales": 12,
+            "picking": 12,
+            "returns": 3,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 186.31,
+            "outboundUnitPrice": 170.57,
+            "profitMargin": -8.45
+          },
+          "gs1String": "(01)07249951808812(17)261128(10)LOT2026H7117",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395793426-3",
+          "product": {
+            "ref": "212.824E",
+            "gtin": "10886982152893",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026Q9301",
+          "expiry": "Jun-2027",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 121.66,
+            "outboundUnitPrice": 147.21,
+            "profitMargin": 21
+          },
+          "gs1String": "(01)08869821528931(17)270628(10)LOT2026Q9301",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395793426-4",
+          "product": {
+            "ref": "405120E",
+            "gtin": "05415067040978",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026O8143",
+          "expiry": "Apr-2027",
+          "baseQuantity": 18,
+          "quantities": {
+            "inbound": 18,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 148.08,
+            "outboundUnitPrice": 164.63,
+            "profitMargin": 11.18
+          },
+          "gs1String": "(01)54150670409786(17)270428(10)LOT2026O8143",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395793426-variant",
+          "product": {
+            "ref": "0275-647-000B",
+            "gtin": "37613327061735",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026J4862",
+          "expiry": "Jan-2027",
+          "baseQuantity": 12,
+          "quantities": {
+            "inbound": 12,
+            "sales": 7,
+            "picking": 7,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 147.44,
+            "outboundUnitPrice": 169.46,
+            "profitMargin": 14.93
+          },
+          "gs1String": "(01)76133270617357(17)270128(10)LOT2026J4862",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 98,
+        "totalSalesQty": 57,
+        "totalInboundValue": 15848.95,
+        "totalSalesValue": 9488.38,
+        "expectedProfit": 257.24,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770395925985",
+    "name": "CS6",
+    "createdAt": "2026-02-06T16:38:45.985Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T16:38:45.985Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770395925984-0",
+          "product": {
+            "ref": "306028-0000-000E",
+            "gtin": "04049539102386",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026R1159",
+          "expiry": "May-2027",
+          "baseQuantity": 15,
+          "quantities": {
+            "inbound": 15,
+            "sales": 9,
+            "picking": 9,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 159.77,
+            "outboundUnitPrice": 162.61,
+            "profitMargin": 1.78
+          },
+          "gs1String": "(01)40495391023864(17)270528(10)LOT2026R1159",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395925985-1",
+          "product": {
+            "ref": "00711811E",
+            "gtin": "00724995180881",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026R2008",
+          "expiry": "Mar-2027",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 198.6,
+            "outboundUnitPrice": 219.53,
+            "profitMargin": 10.54
+          },
+          "gs1String": "(01)07249951808812(17)270328(10)LOT2026R2008",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395925985-2",
+          "product": {
+            "ref": "9079-VC-005E",
+            "gtin": "10816000013967",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026N8384",
+          "expiry": "Apr-2027",
+          "baseQuantity": 15,
+          "quantities": {
+            "inbound": 15,
+            "sales": 9,
+            "picking": 9,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 176.16,
+            "outboundUnitPrice": 169.48,
+            "profitMargin": -3.79
+          },
+          "gs1String": "(01)08160000139673(17)270428(10)LOT2026N8384",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395925985-3",
+          "product": {
+            "ref": "2296-003-225E",
+            "gtin": "04546540046550",
+            "originalExpiry": "Oct-2025"
+          },
+          "lot": "LOT2026P4646",
+          "expiry": "Feb-2027",
+          "baseQuantity": 12,
+          "quantities": {
+            "inbound": 12,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 128.7,
+            "outboundUnitPrice": 150.82,
+            "profitMargin": 17.19
+          },
+          "gs1String": "(01)45465400465508(17)270228(10)LOT2026P4646",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395925985-4",
+          "product": {
+            "ref": "G3606010E",
+            "gtin": "00643169530096",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026C4786",
+          "expiry": "Jan-2027",
+          "baseQuantity": 11,
+          "quantities": {
+            "inbound": 11,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 193.22,
+            "outboundUnitPrice": 178.83,
+            "profitMargin": -7.45
+          },
+          "gs1String": "(01)06431695300962(17)270128(10)LOT2026C4786",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770395925985-variant",
+          "product": {
+            "ref": "306028-0000-000E",
+            "gtin": "04049539102386",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026D2239",
+          "expiry": "Oct-2026",
+          "baseQuantity": 15,
+          "quantities": {
+            "inbound": 15,
+            "sales": 9,
+            "picking": 9,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 177.67,
+            "outboundUnitPrice": 160.42,
+            "profitMargin": -9.71
+          },
+          "gs1String": "(01)40495391023864(17)261028(10)LOT2026D2239",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 85,
+        "totalSalesQty": 50,
+        "totalInboundValue": 14750.02,
+        "totalSalesValue": 8756.61,
+        "expectedProfit": 87.99,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770397776388",
+    "name": "CS7",
+    "createdAt": "2026-02-06T17:09:36.388Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T17:09:36.388Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770397776387-0",
+          "product": {
+            "ref": "AR-3200-1040E",
+            "gtin": "00888867100640",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026S5381",
+          "expiry": "Sep-2026",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 147.66,
+            "outboundUnitPrice": 168.41,
+            "profitMargin": 14.05
+          },
+          "gs1String": "(01)08888671006406(17)260928(10)LOT2026S5381",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397776387-1",
+          "product": {
+            "ref": "07-150-12E",
+            "gtin": "00817122020331",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026Z3920",
+          "expiry": "Jul-2027",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 116.74,
+            "outboundUnitPrice": 116.4,
+            "profitMargin": -0.29
+          },
+          "gs1String": "(01)08171220203310(17)270728(10)LOT2026Z3920",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397776387-2",
+          "product": {
+            "ref": "C9415E",
+            "gtin": "10845854018705",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026R9517",
+          "expiry": "May-2027",
+          "baseQuantity": 12,
+          "quantities": {
+            "inbound": 12,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 122.44,
+            "outboundUnitPrice": 134.37,
+            "profitMargin": 9.74
+          },
+          "gs1String": "(01)08458540187057(17)270528(10)LOT2026R9517",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397776387-3",
+          "product": {
+            "ref": "9599AE",
+            "gtin": "10845854018712",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026M0958",
+          "expiry": "Oct-2026",
+          "baseQuantity": 20,
+          "quantities": {
+            "inbound": 20,
+            "sales": 12,
+            "picking": 12,
+            "returns": 3,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 124.05,
+            "outboundUnitPrice": 117.93,
+            "profitMargin": -4.93
+          },
+          "gs1String": "(01)08458540187125(17)261028(10)LOT2026M0958",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397776387-4",
+          "product": {
+            "ref": "0120-20-2.7E",
+            "gtin": "00350770949055",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026F9858",
+          "expiry": "Dec-2026",
+          "baseQuantity": 20,
+          "quantities": {
+            "inbound": 20,
+            "sales": 12,
+            "picking": 12,
+            "returns": 3,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 147.46,
+            "outboundUnitPrice": 168.4,
+            "profitMargin": 14.2
+          },
+          "gs1String": "(01)03507709490554(17)261228(10)LOT2026F9858",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397776388-variant",
+          "product": {
+            "ref": "AR-3200-1040E",
+            "gtin": "00888867100640",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026T7230",
+          "expiry": "Jan-2027",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 174.59,
+            "outboundUnitPrice": 216.34,
+            "profitMargin": 23.91
+          },
+          "gs1String": "(01)08888671006406(17)270128(10)LOT2026T7230",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 102,
+        "totalSalesQty": 60,
+        "totalInboundValue": 14072.02,
+        "totalSalesValue": 9071.77,
+        "expectedProfit": 799.11,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770397807307",
+    "name": "CS8",
+    "createdAt": "2026-02-06T17:10:07.307Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T17:10:07.307Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770397807307-0",
+          "product": {
+            "ref": "H9102E",
+            "gtin": "10845854018071",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026O4470",
+          "expiry": "Aug-2026",
+          "baseQuantity": 16,
+          "quantities": {
+            "inbound": 16,
+            "sales": 9,
+            "picking": 9,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 184.04,
+            "outboundUnitPrice": 222.23,
+            "profitMargin": 20.75
+          },
+          "gs1String": "(01)08458540180713(17)260828(10)LOT2026O4470",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397807307-1",
+          "product": {
+            "ref": "C9415E",
+            "gtin": "10845854018705",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026G1681",
+          "expiry": "Aug-2026",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 126.26,
+            "outboundUnitPrice": 141.39,
+            "profitMargin": 11.98
+          },
+          "gs1String": "(01)08458540187057(17)260828(10)LOT2026G1681",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397807307-2",
+          "product": {
+            "ref": "9599AE",
+            "gtin": "10845854018712",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026C2211",
+          "expiry": "Mar-2027",
+          "baseQuantity": 13,
+          "quantities": {
+            "inbound": 13,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 133.43,
+            "outboundUnitPrice": 140.53,
+            "profitMargin": 5.32
+          },
+          "gs1String": "(01)08458540187125(17)270328(10)LOT2026C2211",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397807307-3",
+          "product": {
+            "ref": "G3606010E",
+            "gtin": "00643169530096",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026A0141",
+          "expiry": "Sep-2026",
+          "baseQuantity": 12,
+          "quantities": {
+            "inbound": 12,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 149.57,
+            "outboundUnitPrice": 181.28,
+            "profitMargin": 21.2
+          },
+          "gs1String": "(01)06431695300962(17)260928(10)LOT2026A0141",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397807307-4",
+          "product": {
+            "ref": "204.828E",
+            "gtin": "10886982146328",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026T1387",
+          "expiry": "Sep-2026",
+          "baseQuantity": 15,
+          "quantities": {
+            "inbound": 15,
+            "sales": 9,
+            "picking": 9,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 109.17,
+            "outboundUnitPrice": 132.01,
+            "profitMargin": 20.92
+          },
+          "gs1String": "(01)08869821463287(17)260928(10)LOT2026T1387",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397807307-variant",
+          "product": {
+            "ref": "H9102E",
+            "gtin": "10845854018071",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026J4424",
+          "expiry": "Nov-2026",
+          "baseQuantity": 14,
+          "quantities": {
+            "inbound": 14,
+            "sales": 8,
+            "picking": 8,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 133.82,
+            "outboundUnitPrice": 164.94,
+            "profitMargin": 23.26
+          },
+          "gs1String": "(01)08458540180713(17)261128(10)LOT2026J4424",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 89,
+        "totalSalesQty": 51,
+        "totalInboundValue": 12384.04,
+        "totalSalesValue": 8315.64,
+        "expectedProfit": 1236.33,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770397825918",
+    "name": "CS9",
+    "createdAt": "2026-02-06T17:10:25.918Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T17:10:25.918Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770397825917-0",
+          "product": {
+            "ref": "0375-545-000B",
+            "gtin": "37613327061797",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026R1511",
+          "expiry": "Jul-2027",
+          "baseQuantity": 10,
+          "quantities": {
+            "inbound": 10,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 152.08,
+            "outboundUnitPrice": 160.24,
+            "profitMargin": 5.37
+          },
+          "gs1String": "(01)76133270617975(17)270728(10)LOT2026R1511",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397825918-1",
+          "product": {
+            "ref": "204.838E",
+            "gtin": "04712782854325",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026Q2227",
+          "expiry": "Nov-2026",
+          "baseQuantity": 18,
+          "quantities": {
+            "inbound": 18,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 189.08,
+            "outboundUnitPrice": 181.36,
+            "profitMargin": -4.08
+          },
+          "gs1String": "(01)47127828543258(17)261128(10)LOT2026Q2227",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397825918-2",
+          "product": {
+            "ref": "G6303E",
+            "gtin": "00607915118105",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026C9970",
+          "expiry": "Feb-2027",
+          "baseQuantity": 11,
+          "quantities": {
+            "inbound": 11,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 153.07,
+            "outboundUnitPrice": 172.06,
+            "profitMargin": 12.41
+          },
+          "gs1String": "(01)06079151181054(17)270228(10)LOT2026C9970",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397825918-3",
+          "product": {
+            "ref": "AR-3200-1040E",
+            "gtin": "00888867100640",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026N6711",
+          "expiry": "Oct-2026",
+          "baseQuantity": 18,
+          "quantities": {
+            "inbound": 18,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 194.21,
+            "outboundUnitPrice": 203.92,
+            "profitMargin": 5
+          },
+          "gs1String": "(01)08888671006406(17)261028(10)LOT2026N6711",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397825918-4",
+          "product": {
+            "ref": "AR-4209-14E",
+            "gtin": "00888867033498",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026B8814",
+          "expiry": "Feb-2027",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 169.75,
+            "outboundUnitPrice": 161.35,
+            "profitMargin": -4.95
+          },
+          "gs1String": "(01)08888670334982(17)270228(10)LOT2026B8814",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397825918-variant",
+          "product": {
+            "ref": "0375-545-000B",
+            "gtin": "37613327061797",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026U9307",
+          "expiry": "Feb-2027",
+          "baseQuantity": 18,
+          "quantities": {
+            "inbound": 18,
+            "sales": 10,
+            "picking": 10,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 182.76,
+            "outboundUnitPrice": 201.63,
+            "profitMargin": 10.33
+          },
+          "gs1String": "(01)76133270617975(17)270228(10)LOT2026U9307",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 92,
+        "totalSalesQty": 52,
+        "totalInboundValue": 16279.22,
+        "totalSalesValue": 9476.4,
+        "expectedProfit": 287.5,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  },
+  {
+    "id": "cs-1770397857989",
+    "name": "CS10",
+    "createdAt": "2026-02-06T17:10:57.989Z",
+    "selectedUseCases": [
+      "inbound-multi-product",
+      "sales-multi-line",
+      "acct-payment-check",
+      "pick-multi-location"
+    ],
+    "workflow": {
+      "generatedAt": "2026-02-06T17:10:57.989Z",
+      "requirements": {
+        "totalProducts": 5,
+        "needsMultipleLots": true,
+        "needsExpiredProduct": false,
+        "needsNearExpiry": false,
+        "needsDamagedProduct": false,
+        "maxComplexity": "medium",
+        "moduleQuantities": {
+          "inbound": 1,
+          "sales": 1,
+          "picking": 1,
+          "rma": 0,
+          "expired-damaged": 0,
+          "accounting": 1
+        }
+      },
+      "items": [
+        {
+          "id": "wf-1770397857989-0",
+          "product": {
+            "ref": "UMW676E",
+            "gtin": "00888937001440",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026J5170",
+          "expiry": "Nov-2026",
+          "baseQuantity": 20,
+          "quantities": {
+            "inbound": 20,
+            "sales": 12,
+            "picking": 12,
+            "returns": 3,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 180.2,
+            "outboundUnitPrice": 197.84,
+            "profitMargin": 9.79
+          },
+          "gs1String": "(01)08889370014402(17)261128(10)LOT2026J5170",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397857989-1",
+          "product": {
+            "ref": "0275-647-000B",
+            "gtin": "37613327061735",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026J0805",
+          "expiry": "May-2027",
+          "baseQuantity": 17,
+          "quantities": {
+            "inbound": 17,
+            "sales": 10,
+            "picking": 10,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 162.33,
+            "outboundUnitPrice": 202.14,
+            "profitMargin": 24.52
+          },
+          "gs1String": "(01)76133270617357(17)270528(10)LOT2026J0805",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397857989-2",
+          "product": {
+            "ref": "9079-VC-005E",
+            "gtin": "10816000013967",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026S2252",
+          "expiry": "Dec-2026",
+          "baseQuantity": 19,
+          "quantities": {
+            "inbound": 19,
+            "sales": 11,
+            "picking": 11,
+            "returns": 2,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 117.5,
+            "outboundUnitPrice": 144.29,
+            "profitMargin": 22.8
+          },
+          "gs1String": "(01)08160000139673(17)261228(10)LOT2026S2252",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397857989-3",
+          "product": {
+            "ref": "07-150-12E",
+            "gtin": "00817122020331",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026Y4682",
+          "expiry": "Jun-2027",
+          "baseQuantity": 13,
+          "quantities": {
+            "inbound": 13,
+            "sales": 7,
+            "picking": 7,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 103.81,
+            "outboundUnitPrice": 120.65,
+            "profitMargin": 16.22
+          },
+          "gs1String": "(01)08171220203310(17)270628(10)LOT2026Y4682",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397857989-4",
+          "product": {
+            "ref": "G3606010E",
+            "gtin": "00643169530096",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026F1692",
+          "expiry": "Dec-2026",
+          "baseQuantity": 10,
+          "quantities": {
+            "inbound": 10,
+            "sales": 6,
+            "picking": 6,
+            "returns": 1,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 101.61,
+            "outboundUnitPrice": 120.78,
+            "profitMargin": 18.87
+          },
+          "gs1String": "(01)06431695300962(17)261228(10)LOT2026F1692",
+          "flags": {
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        },
+        {
+          "id": "wf-1770397857989-variant",
+          "product": {
+            "ref": "UMW676E",
+            "gtin": "00888937001440",
+            "originalExpiry": "Sep-2025"
+          },
+          "lot": "LOT2026A2880",
+          "expiry": "Mar-2027",
+          "baseQuantity": 12,
+          "quantities": {
+            "inbound": 12,
+            "sales": 7,
+            "picking": 7,
+            "returns": 0,
+            "damaged": 0,
+            "expired": 0
+          },
+          "pricing": {
+            "inboundUnitPrice": 186.83,
+            "outboundUnitPrice": 199.01,
+            "profitMargin": 6.52
+          },
+          "gs1String": "(01)08889370014402(17)270328(10)LOT2026A2880",
+          "flags": {
+            "isVariantLot": true,
+            "isExpired": false,
+            "isNearExpiry": false,
+            "isDamaged": false
+          }
+        }
+      ],
+      "summary": {
+        "totalProducts": 6,
+        "totalInboundQty": 91,
+        "totalSalesQty": 53,
+        "totalInboundValue": 13203.7,
+        "totalSalesValue": 8944.97,
+        "expectedProfit": 1222.63,
+        "hasExpiredItems": false,
+        "hasNearExpiryItems": false,
+        "hasDamagedItems": false
+      }
+    },
+    "customNotes": ""
+  }
+]
