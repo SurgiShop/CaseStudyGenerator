@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { Navigation } from "@/components/navigation";
 import {
@@ -13,9 +14,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useCaseStudy } from "@/context/case-study-context";
-import { modules, getUseCasesByModule } from "@/lib/use-cases";
+import { modules, getUseCasesByModule, getRandomUseCases } from "@/lib/use-cases";
 
 export default function Home() {
+  const router = useRouter();
   const {
     selectedUseCases,
     savedCaseStudies,
@@ -25,7 +27,14 @@ export default function Home() {
     deleteCaseStudy,
     refreshCaseStudies,
     currentWorkflow,
+    replaceSelection,
   } = useCaseStudy();
+
+  const handleRandomCaseStudy = () => {
+    const randomIds = getRandomUseCases();
+    replaceSelection(randomIds);
+    router.push("/generator");
+  };
 
   // Refresh case studies on mount
   useEffect(() => {
@@ -50,6 +59,25 @@ export default function Home() {
             scenario.
           </p>
         </div>
+
+        {/* Random Case Study Button */}
+        <Card className="mb-8 border-dashed border-2 hover:border-primary/50 transition-colors">
+          <CardContent className="py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+              <h3 className="text-lg font-semibold">Quick Start</h3>
+              <p className="text-muted-foreground text-base">
+                Generate a case study with randomized use cases from multiple modules
+              </p>
+            </div>
+            <Button
+              onClick={handleRandomCaseStudy}
+              className="h-12 px-6 text-base touch-manipulation whitespace-nowrap"
+              disabled={!isLoaded}
+            >
+              🎲 Random Case Study
+            </Button>
+          </CardContent>
+        </Card>
 
         {/* Current Selection Summary */}
         {isLoaded && selectedUseCases.length > 0 && (

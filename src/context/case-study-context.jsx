@@ -102,6 +102,11 @@ export function CaseStudyProvider({ children }) {
     setCurrentWorkflow(null);
   }, []);
 
+  const replaceSelection = useCallback((useCaseIds) => {
+    setSelectedUseCases(useCaseIds);
+  }, []);
+
+
   const selectAllInCategory = useCallback((useCaseIds) => {
     setSelectedUseCases((prev) => {
       const newIds = useCaseIds.filter((id) => !prev.includes(id));
@@ -292,6 +297,7 @@ export function CaseStudyProvider({ children }) {
     selectUseCase,
     deselectUseCase,
     clearSelection,
+    replaceSelection,
     selectAllInCategory,
     deselectAllInCategory,
 

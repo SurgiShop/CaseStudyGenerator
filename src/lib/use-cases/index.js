@@ -135,3 +135,52 @@ export const complexityLevels = {
     color: "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300",
   },
 };
+
+/**
+ * Get a random selection of use cases for generating a random case study
+ * Returns 3-6 use cases, ensuring diversity across modules
+ */
+export function getRandomUseCases() {
+  const allUseCases = [
+    ...inboundUseCases,
+    ...salesUseCases,
+    ...accountingUseCases,
+    ...pickingUseCases,
+    ...rmaUseCases,
+    ...expiredDamagedUseCases,
+  ];
+
+  // Define core modules that should be represented
+  const coreModules = ["inbound", "sales", "accounting"];
+  const optionalModules = ["picking", "rma", "expired-damaged"];
+
+  const selectedIds = [];
+
+  // First, ensure one use case from each core module
+  coreModules.forEach((moduleId) => {
+    const moduleUseCases = allUseCases.filter((uc) => uc.module === moduleId);
+    if (moduleUseCases.length > 0) {
+      const randomIndex = Math.floor(Math.random() * moduleUseCases.length);
+      selectedIds.push(moduleUseCases[randomIndex].id);
+    }
+  });
+
+  // Decide total count (3-6 use cases)
+  const totalCount = 3 + Math.floor(Math.random() * 4); // 3, 4, 5, or 6
+
+  // Fill remaining slots with random use cases from any module
+  const remainingSlots = totalCount - selectedIds.length;
+  const availableUseCases = allUseCases.filter(
+    (uc) => !selectedIds.includes(uc.id)
+  );
+
+  // Shuffle available use cases
+  const shuffled = availableUseCases.sort(() => 0.5 - Math.random());
+
+  // Add random use cases to fill remaining slots
+  for (let i = 0; i < remainingSlots && i < shuffled.length; i++) {
+    selectedIds.push(shuffled[i].id);
+  }
+
+  return selectedIds;
+}
